@@ -4,6 +4,5 @@
 <p><%= @task.description %></p>
 <p><%= @task.company %></p>
 
-<%= link_to "Home", root_path %>
 <%= link_to "Edit", edit_task_path %>
 <%= link_to "Trash", task_path, method: :delete, data: { confirm: "Are you sure?" } %>
