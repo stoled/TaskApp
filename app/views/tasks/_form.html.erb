@@ -1,8 +1,8 @@
 <%= simple_form_for(@task, html: { class: 'form-group'}) do |f| %>
-  <%= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose a category" }, class: "form-control" %>
-  <%= f.input :title, label: "Task Title" %>
-  <%= f.input :description, label: "Description" %>
-  <%= f.input :company, label: "Your Company" %>
-  <%= f.input :url, label: "Link To Task" %>
+  <%= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose a category" }, class: "form-control mb-3" %>
+  <%= f.input :title, label: false, placeholder: "Title" %>
+  <%= f.input :description, label: false, placeholder: "Description" %>
+  <%= f.input :company, label: false, placeholder: "Company" %>
+  <%= f.input :url, label: false, placeholder: "task-site.com" %>
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
