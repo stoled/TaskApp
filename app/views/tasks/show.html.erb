@@ -3,5 +3,5 @@
 <p><%= @task.company %></p>
 <%= link_to "Complete Task", "http://#{@task.url}", class: "btn btn-primary" %>
 
-<%= link_to "Edit", edit_task_path %>
-<%= link_to "Trash", task_path, method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Edit", edit_task_path, class: "btn btn-secondary" %>
+<%= link_to "Trash", task_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
